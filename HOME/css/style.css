@@ -42,7 +42,6 @@ a:hover{
 	background-color:royalblue;
 }
 
-
 .top_page{
 	float:left;
 	margin:0 20px
@@ -55,4 +54,9 @@ footer{
 	width:100%;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+.koreha{
+	text-align:left;
+	color:red;
 }
