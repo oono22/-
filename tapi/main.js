@@ -3,7 +3,7 @@ window.onload=function(){
 	var tpcnt = document.getElementById('tpcnt');
 	//var a=document.getElementById('tpcnt');
 	var cnt_value = 0;
-	var item1=0,item2=0,item3=0,item4=0,a=0;
+	var item1=0,item2=0,item3=0,item4=0,a=0,shnum=0;
 	var imuch1=15,imuch2=100,imuch3=1100,imuch4=12000;
 	var icps1=1,icps2=8,icps3=20,icps4=47,scps=0;
 
@@ -72,17 +72,38 @@ window.onload=function(){
 
 	var parsecond=function(){
 		document.getElementById('i_cps').innerHTML=scps;
-		if (scps>=1) {
-			document.getElementById('shower').style.animation= 'r2 15s linear infinite';
+		if (shnum==0 && scps>=1) {
+			shower();
 		}
 	};
 
 	var addPcnt=function(){
-		cnt_value+=scps
+		cnt_value+=scps;
 		document.getElementById('tpcnt').innerHTML=cnt_value;
 	};
 
 	setInterval(addPcnt,1000);
 	setInterval(parsecond,50);
+
+	function shower(){
+		$(document).ready(function () {
+			shnum+=1;
+	    	//アニメーションスピード
+	    	var scrollSpeed = 0.1;
+	    	//画像サイズ
+	    	var imgWidth = 512;
+	    	//画像の初期位置
+	    	var posY = 0;
+	    	$('.tapioca').css("height","1024px");
+	    	//ループ処理
+	    	setInterval(function(){
+	        	//画像のサイズまで移動したら0に戻る。
+	        	if (posY >= imgWidth) posY= 0;
+	        	//scrollSpeed分移動
+	        	posY += scrollSpeed;
+	  			$('.tapioca').css("background-position","10px "+posY+"px");
+	    	}, 1);
+		});
+	};
 
 };

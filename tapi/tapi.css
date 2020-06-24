@@ -1,7 +1,7 @@
 @charset "utf-8";
 body{
-	background-image: url("./image/bgBlue.jpg");
-	background-repeat: repeat;
+ 	background-image: url("./image/bgBlue.jpg");
+ 	background-repeat: repeat;
 	color: #EEEEEE;
 	z-index: 1;
 }
@@ -55,7 +55,7 @@ body{
 	transform: translate(-50%, -50%);
 	text-align: center;
 	top: 130px;
-	left: 288px;
+	left: 275px;
 	background: rgba(0,0,0,0.3);
 	background-size: contain;
 	width: 500px;
@@ -70,13 +70,15 @@ body{
 	margin-top: 20px;
 }
 
-#shower,#shower2,#shower3{
-	position: absolute;
-	top: -75%;
-	left: 30px;
-	z-index: 9997;
-}
-
 @keyframes r2 {
   100%  {transform: translateY(290%);}
+}
+
+.tapioca{
+	
+	height: 0px;
+	width: 542px;
+	background-image: url("./image/cookieShower3.png");
+	background-repeat: repeat-y;
+	background-position: 23px 0px;
 }
