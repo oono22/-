@@ -143,7 +143,7 @@ data = [
     {"title":"ステーキ",
      "img":"cards/47.jpg",
      "rarelity":5},
-    {"title":"伝説レア 橘田翔平",
+    {"title":"ヘブンズ・ビール",
      "img":"cards/48.jpg",
      "rarelity":5},
     {"title":"寿司",
