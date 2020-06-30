@@ -9032,15 +9032,15 @@ a.text-dark:hover, a.text-dark:focus {
 	color:red;
 }
 .title{
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:50px;
-	margin-bottom:50px;
+	margin:0;
 	text-align:center;
 	font-size:120%;
 	background-color:#000000;
 	color:#ffffff;
 }
+.title>h1{
+	margin:0;
+	padding:40px 0px 40px 0px;
 
 .catch{
 	text-align:center;
