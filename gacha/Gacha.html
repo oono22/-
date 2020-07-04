@@ -3,8 +3,7 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
     <script src="jquery-2.2.4.min.js"></script>
     <script src="dinnergacha.js"></script>
     <title>ガチャ問題</title>
@@ -12,33 +11,12 @@
 <body>
     <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-    <header>
-        <div id="headerparts"><img src="stone.png"><label id="stone">0</label></div>
+    <header style="background-color:#000216;color:white">
+        <div id="headerparts"class="display-4"><img src="stone.png"><label id="stone">0</label></div>
     </header>
-    <div class="container">
+    <div class="container-fluid"style="background-color:#000216">
         <div class="row">
-            <div class="col-lg-9 order-lg-2">
-                <div id="content">
-                    <div></div>
-                    <div id="gachaimage">
-                        <img src="プレゼンテーション1.png">
-                    </div>
-                    <div id="loadarea">
-                    </div>
-                    <div id="result">
-                    </div>
-                    <div id="searcharea">
-                        <div id="try">
-                            <a href="#top">
-                                <img src="button.png">
-                            </a>
-                            <div>10回召喚：<img src="stone.png">100個</div>
-                        </div>
-                    </div>
-                </div>
-                <form method="post" id="msgform" action="result.php"></form>
-            </div>
-            <div class="col-lg-3 order-lg-1" style="padding:0">
+            <div class="col-lg-2 order-lg-1" style="padding:0;background-color:silver">
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>
@@ -76,7 +54,31 @@
                     </tbody>
                 </table>
             </div>
+            <div class="col-lg-10 order-lg-2">
+
+                <div id="content">
+                    <div></div>
+                    <div id="gachaimage">
+                        <img src="プレゼンテーション1.png"class="img-fluid">
+                    </div>
+                    <div id="loadarea">
+                    </div>
+                    <div id="result">
+                    </div>
+                    <div id="searcharea" style="text-align:center">
+                        <div id="try">
+                            <a href="#top">
+                                <img src="button.png">
+                            </a>
+                            <div class="display-5" style="color:white">10回召喚：<img src="stone.png">100個</div>
+                        </div>
+                    </div>
+                </div>
+                <form method="post" id="msgform" action="result.php"></form>
+            </div>
+
         </div>
-        </div>
+    </div>
+
 </body>
 </html>	
