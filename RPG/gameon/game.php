@@ -90,14 +90,18 @@ div.box{
 	  var lv = <?php echo $lv?>;
       var target = document.getElementById("lv3");
 	  var target1 = document.getElementById("lv4");
-      if (lv > 5) {
-        target.href = "game3.php";
-		target.textContent = "バトル2";
-		if (lv > 9) {
-        target1.href = "game4.php";
-		target1.textContent = "バトル3";
-		}
-      }
+if(lv<10){
+target1.href = "#";
+target1.textContent="レベル10以上";
+target1.onclick=function(){alert("レベルが足りません")};
+if(lv<6){
+target.href = "#";
+target.textContent="レベル6以上";
+target.onclick=function(){alert("レベルが足りません")};
+}
+}
+
+
      };
   </script>
 </head>
@@ -108,8 +112,8 @@ div.box{
   <ul>
   <li><a href="#" class="square_btn2">チュートリアル</a></li>
   <li><a href="game2.php" class="square_btn"> バトル1</a></li>
-  <li><a id ="lv3" href="#" class="square_btn"> LV6以上</a></li>
-  <li><a id ="lv4" href="#" class="square_btn"> LV10以上</a></li>
+  <li><a id ="lv3" href="game3.php" class="square_btn"> バトル２</a></li>
+  <li><a id ="lv4" href="game4.php" class="square_btn"> バトル３</a></li>
   <div class="box" >
   <form action="game4.php"method="POST"name="from">
            <div>LV:<?php echo floor($lv)?><input type="hidden"  style="position: absolute; left: 50%; 50%" value="<?php echo $lv?>" name="ghg" ><br></div>
