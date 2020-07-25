@@ -1,0 +1,4 @@
+
+$filename = fopen('./users.data', "a");
+@fwrite($filename, '001,太郎¥n002,花子¥n');
+fclose($a);
