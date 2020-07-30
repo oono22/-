@@ -1,6 +1,7 @@
 <?php
 	//require_once("User.csv");
 	ini_set('display_errors',"On");
+
 	//セッション開始
 	session_start();
 
@@ -11,25 +12,17 @@
 	// 読み込み用にtest.csvを開きます。
 	$f = fopen("User.csv", "r");
 	
-	// test.csvの行を1行ずつ読み込みます。
+	//User.csvの行を1行ずつ読み込みます。
 	while($line = fgetcsv($f)){
-	
-	//$result1=array_intersect($id,$line);
 	if($line[0]==$id&&$line[1]==$passwrd){
 	//パスワードが正しければメニューに飛ばす
 		$_SESSION['id'] = $id;
-		header('Location: hitokoto.php');
+		header("Location: hitokoto.php");
 		}else{
 		//見つからなかったまたはパスワードが違ったらログインページに戻す
-		//header('Location: login.php?err=1');
+		//header("Location: login.php");
 		}
-
-	
 	}
-	
-		
-	
-	
-	// test.csvを閉じます。
+	//User.csvを閉じます。
 	fclose($f);
 ?>
