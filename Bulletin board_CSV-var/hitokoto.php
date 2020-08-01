@@ -1,5 +1,5 @@
-<?php
-	require_once('db.inc');
+﻿<?php
+	
 	date_default_timezone_set('Asia/Tokyo');
 	session_start();
 	//ログインユーザ情報を取得
@@ -41,11 +41,9 @@
 <form name="message" action="output_csv.php"method="post">
 <dl>
 <dt class="comment">コメント</dt>
-<dd>
-<textarea name="message" maxlength="140" cols="50" rows="1" id="message" ></textarea>
-</dd>
+<input id="textarea" name="message" maxlength="140" cols="50" rows="1" id="message" size="40" ></textarea>
 </dl>
-<input type="submit" value="投稿する" onClick='check()'/>
+<input id="submit_button" type="submit" value="投稿する" onClick='check()'/>
 </form>
 </div>
 <div id="view">
@@ -70,7 +68,8 @@ while($line=fgetcsv($f)){
  if($_SESSION['id']==$line[0]){
  ?>
  <a href="delete.php?id=<?php echo htmlspecialchars($line[1]);?>">削除</a>
- <?php }
+ <?php 
+	}
  }
  //hitokoto.csvを閉じる
 fclose($f);?>
