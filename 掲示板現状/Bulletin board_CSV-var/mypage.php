@@ -23,7 +23,7 @@
 			$tel = $line[3];
 			}
 		}
-
+}
 fclose($f);?>
 <?php
 header('Content-Type: text/html; charset=UTF-8');
