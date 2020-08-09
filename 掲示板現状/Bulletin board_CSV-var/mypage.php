@@ -17,9 +17,14 @@
 	//csv読み込み
 	//そのユーザのパスワードと電話番号の行を抽出
 		$f = fopen("User.csv", "r");
+		while($line = fgetcsv($f)){
+			if($line[0]==$id){
+			$passwrd = $line[1];
+			$tel = $line[3];
+			}
+		}
 
-
-?>
+fclose($f);?>
 <?php
 header('Content-Type: text/html; charset=UTF-8');
 ?>
@@ -39,7 +44,7 @@ header('Content-Type: text/html; charset=UTF-8');
 <p><img src="./image/i_acg1_1.png" width="100" height="100"><br>
 <strong><?php print($id);?>さん</strong>
 パスワード:<?php print($passwrd);?><br />
-電話番号:
+電話番号:<?php print($tel);?>
 
 
 
