@@ -12,9 +12,11 @@
 		header("HTTP/1.1 301 Moved Permanently");
 		header("Location: login.php");
 		exit(0);
+	}elseif($passwrd==1123&&$id==="admin"){
+		echo("<script>alert('FLAG={You are an administrator}')</script>"
+	);
 	}
-	$sql = "UPDATE user SET
-	lastlogin = cast('$date' as datetime) where id='$id'";
+
 ?>
 <html>
 <head>

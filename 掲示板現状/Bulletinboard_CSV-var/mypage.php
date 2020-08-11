@@ -11,8 +11,6 @@
 		header("HTTP/1.1 301 Moved Permanently");
 		header("Location: login.php");
 		exit(0);
-	}else if($id == 'admin'){
-		alert("FLAG={You are an administrator}");
 	}else{
 	//csv読み込み
 	//そのユーザのパスワードと電話番号の行を抽出
@@ -23,6 +21,7 @@
 			$tel = $line[4];
 			$birth = $line[3];
 			$comment = $line[5];
+			$num = $line[0];
 			}
 		}
 		}
@@ -44,11 +43,11 @@ header('Content-Type: text/html; charset=UTF-8');
 <p class="comment"><a href="hitokoto.php">←戻る</a>
 　　　　　   　　　　　　　　　　　　　　　　　　　<a href="logout.php">ログアウト</a></p>
 <div id="mypage2">
-<p><img src="./image/i_acg1_1.png" width="100" height="100"><br>
+<p><img src="./image/icon<?php echo ($num)?>.png" width="100" height="100"><br>
 <strong><?php print($id);?>さん</strong>
 電話番号:<?php print($tel);?><br />
 誕生日:<?php print($birth);?><br />
-自己紹介；<?php print($comment)?>
+自己紹介:<?php print($comment)?>
 
 
 
