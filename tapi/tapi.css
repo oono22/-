@@ -63,10 +63,28 @@ html, body{
 	font-size: 44px;
 }
 
-#i_num1,#i_num2,#i_num3,#i_num4{
+#i_num1{
 	display: inline-block;
 	vertical-align:middle;
 	margin-left: 50px;
+	font-size: 44px;
+}
+#i_num2{
+	display: inline-block;
+	vertical-align:middle;
+	margin-left: 40px;
+	font-size: 44px;
+}
+#i_num3{
+	display: inline-block;
+	vertical-align:middle;
+	margin-left: 30px;
+	font-size: 44px;
+}
+#i_num4{
+	display: inline-block;
+	vertical-align:middle;
+	margin-left: 55px;
 	font-size: 44px;
 }
 
@@ -98,7 +116,7 @@ html, body{
 .tapioca{
 	height: 0px;
 	width: 100%;
-	background-image: url("./image/cookieShower3.png");
+	background-image: url("./image/shower.png");
 	background-repeat: repeat-y;
 	
 }
