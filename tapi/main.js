@@ -3,14 +3,14 @@ window.onload=function(){
 	//変数の定義
 	var tapi_cnt=document.getElementById('tapimg');
 	var tpcnt=document.getElementById('tpcnt');
-	var ow=(window.screen.width/2-275)/4,oh=window.screen.height-240,fl_oh=Math.ceil((oh+120)/120);
-	var cnt_value=0,fl_num=100,fl_cnt=0,fl_end=0,fl_y=oh,cnt=4;
+	var ow=(window.screen.width/2-275)/4,oh=window.screen.height-240,fl_oh=Math.ceil((oh+ow)/ow);
+	var cnt_value=0,fl_num=100,fl_cnt=0,fl_end=0,fl_y=0,cnt=4;
 	var item1=0,item2=0,item3=0,item4=0,a=0,shnum=0;
 	var imuch1=15,imuch2=100,imuch3=1100,imuch4=12000;
 	var icps1=1,icps2=8,icps3=20,icps4=47,i_cps=0;
 	var gg=0,wp=fl_oh;
 
-	//タピオカをクリックしたときに１つタピオカを増やす
+	//タピオカをクリックしたときに１つタピオカを足す
 	tapi_cnt.onclick=function(){
 		cnt_value += 1;
 		tpcnt.innerHTML=cnt_value;
@@ -91,7 +91,7 @@ window.onload=function(){
 		document.getElementById('tpcnt').innerHTML=cnt_value;
 		if (cnt_value>=fl_num && fl_end==0) {
 			fl_cnt+=1;
-			fl_num+=(fl_cnt*100);
+			fl_num*=3;
 			tpflag();
 		}
 	};
@@ -126,13 +126,14 @@ window.onload=function(){
 		img.src = './image/maru4.png';
 		img.id=fl_cnt;
 		document.getElementById('fl_tp').appendChild(img);
-		$('#'+fl_cnt).css("width","120px");
-		$('#'+fl_cnt).css("height","120px");
+		$('#'+fl_cnt).css("width",ow+"px");
+		$('#'+fl_cnt).css("height",ow+"px");
 		$('#'+fl_cnt).css("position","absolute");
-		$('#'+fl_cnt).css("transform","translate("+gg+"px, "+fl_y+"px)");
+		$('#'+fl_cnt).css("right",gg+"px");
+		$('#'+fl_cnt).css("bottom",fl_y+"px");
 	    gg+=ow;
 	    if (fl_cnt==cnt) {
-	    	fl_y-=120;
+	    	fl_y+=ow;
 	    	gg=0;
 	    	cnt+=4;
 	    }

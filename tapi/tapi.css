@@ -52,8 +52,8 @@ html, body{
 
 .product{
 	position: absolute;
-	top: 400px;
-	right: 80px;
+	top: 43%;
+	left: 3%;
 }
 
 .itext,.iimg{
@@ -120,3 +120,4 @@ html, body{
 	background-repeat: repeat-y;
 	
 }
+
