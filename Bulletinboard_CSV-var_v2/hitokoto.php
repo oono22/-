@@ -1,0 +1,147 @@
+﻿<?php
+	
+	date_default_timezone_set('Asia/Tokyo');
+	session_start();
+	//ログインユーザ情報を取得
+	$id = $_SESSION['id'];
+	$passwrd = $_SESSION['password'];
+	$date=date('Y-m-d H:i:s');
+
+	//ログインしていない場合はログインページに飛ばす
+	if($id == ''){
+		header("HTTP/1.1 301 Moved Permanently");
+		header("Location: login.php");
+		exit(0);
+	}elseif($passwrd==1123&&$id==="admin"){
+		echo("<script>alert('FLAG={You are an administrator}')</script>"
+	);
+	}
+
+?>
+<html>
+<head>
+	<meta charset="utf8">
+	<link rel="stylesheet" href="css/default.css" type="text/css">
+	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+	<script src="script/jquery-3.1.0.min.js"></script>
+ <script>
+        function check() {
+            var getText = document.form.message.value;
+            if (getText.length == 0) {
+                alert("コメント欄に内容を入力してください");
+            } else if(getText.length >=30){
+                alert("コメント欄の内容が上限(30文字)を超えています");
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="container-fluid" style="background-color:silver">
+		<div class="row">
+		<div class="col-lg-2 order-lg-1" style="padding:0;background-color:silver">
+			<table class="table">
+				<thead class="thead-dark">
+					<tr>
+						<th>現在の教材</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr>
+						<td>
+							<li><a href="../index.html">トップページ</a></li>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<li><a href="/gameon/gamemenu.php">RPG</a></li>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<li><a href="#">ガチャ</a></li>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<li><a href="/sampleq/sample_slot.php">スロット</a></li>
+						</td>
+					</tr>
+					<thead class="thead-dark">
+						<tr>
+							<th>ふわふわふわりんについて</th>
+						</tr>
+					</thead>
+				<tbody>
+					<tr>
+						<td>
+							<li><a href="index.html">活動</a></li>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<li><a href="picture.html">写真集</a></li>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<li><a href="index.html">助手募集</a></li>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-lg-10 order-lg-2">
+
+			<div id="content"style="height:1024px">
+<div id="input">
+<h1>一言掲示板</h1>
+<p class="comment"><?php print($id);?>さん、こんにちは！
+<a href="mypage.php?id=<?php echo $id ?>">マイページ</a>　
+<a href="logout.php">ログアウト</a></p>
+<form name="message" action="output_csv.php"method="post">
+<dl>
+<dt class="comment">コメント</dt>
+<dd>
+<textarea name="message" maxlength="140" cols="50" rows="1" id="message" ></textarea>
+</dd>
+</dl>
+<input type="submit" value="投稿する" onClick='check()'/>
+</form>
+</div>
+<div id="view">
+<h1>投稿一覧</h1>
+<div id="detail">
+ <?php
+ //読み込み用にtest.csvを開く
+$f=fopen("./hitokoto.csv","r");
+//hitokoto.csvを1行ずつ読み込み
+while($line=fgetcsv($f)){
+if(isset($line[1])){
+ ?>
+ <dt>
+ <p><a href="mypage.php?id=<?php echo $line['id'] ?>">
+ <img src="./image/icon<?php echo $line[0] ?>.png" 
+  width="75" height="75" id='img' align="left" ></a><strong>
+  <?php echo htmlspecialchars($line[1],ENT_QUOTES,'UTF-8');?>さん 
+  <?php echo htmlspecialchars($line[3],ENT_QUOTES,'UTF-8');?> </strong>
+ <br><br><?php echo htmlspecialchars($line[2],ENT_QUOTES,'UTF-8');?></p>
+ </dt>
+ <?php 
+ if($_SESSION['id']==$line[1]){
+ ?>
+ <a href="delete.php?id=<?php echo htmlspecialchars($line[2]);?>">削除</a>
+ <?php 
+ }
+	}
+ }
+ //hitokoto.csvを閉じる
+fclose($f);?>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
