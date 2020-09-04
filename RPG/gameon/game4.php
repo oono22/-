@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <?php
     session_start();
     
@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="jQuery.main.js"></script>
     <script type="text/javascript" src="enchant.js"></script>
 	<script type="text/javascript" src="ui.enchant.js"></script>
-    <script type="text/javascript" src="batorfl.js"></script>
+    <script type="text/javascript" src="final_battle.js"></script>
     <style type="text/css">
         body {
             margin: 0;

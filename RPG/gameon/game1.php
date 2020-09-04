@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="jQuery.main.js"></script>
     <script type="text/javascript" src="enchant.js"></script>
 	<script type="text/javascript" src="ui.enchant.js"></script>
-    <script type="text/javascript" src="bator1.js"></script>
+    <script type="text/javascript" src="tutorial_battle.js"></script>
     <style type="text/css">
         body {
             margin: 0;
