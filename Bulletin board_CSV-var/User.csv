@@ -1,7 +1,6 @@
-admin,password,000
-aaa,bbb,ccc
-kitsu_sugita,1145,014
-kei_inomata,0721,081
-maya_yoshi,1919,810
-Blue_Mountain,4545,893
-honnta_N_Wagon,0831,910
+﻿id,password,name,birthday,tel,comment
+1,1123,admin,11月23日,001-1246-5689,我は管理者、フラグを持つものなり
+2,password,user,1月22日,123-2254-5647,パスワードは大事
+3,1145,user2,1月4日,114-514-1919,晴れの日が好き
+4,721,user3,3月21日,535-8432-1234,いつも元気
+5,masimasi1029,fuwa3,10月29日,481-3819-4935,アイドルやってます！

@@ -14,14 +14,18 @@
 	
 	//User.csvの行を1行ずつ読み込みます。
 	while($line = fgetcsv($f)){
-	if($line[0]==$id&&$line[1]==$passwrd){
+		if(isset($line[2])){
+	if($line[2]==$id&&$line[1]==$passwrd){
 	//パスワードが正しければメニューに飛ばす
 		$_SESSION['id'] = $id;
+		$_SESSION['password'] = $passwrd;
 		header("Location: hitokoto.php");
+		break ;
 		}else{
 		//見つからなかったまたはパスワードが違ったらログインページに戻す
-		//header("Location: login.php");
+		header("Location: login.php");
 		}
+	}
 	}
 	//User.csvを閉じます。
 	fclose($f);
