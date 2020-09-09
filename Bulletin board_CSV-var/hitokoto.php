@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="css/default.css" type="text/css">
 	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
 	<script src="script/jquery-3.1.0.min.js"></script>
+        <title>掲示板</title>
  <script>
         function check() {
             var getText = document.form.message.value;

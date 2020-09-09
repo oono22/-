@@ -37,6 +37,7 @@ header('Content-Type: text/html; charset=UTF-8');
 	<link rel="stylesheet" href="css/default.css" type="text/css">
 	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
 	<script src="script/jquery-3.1.0.min.js"></script>
+	<title>掲示板</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="css/bootstrap.css">
