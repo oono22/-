@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">  
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">  
 <html style="height: 100%;">  
   <head>  
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
@@ -97,22 +97,16 @@
 	
 	
     <tr>  
-      <td colspan="3">  
+      <td colspan="9">  
         <form name="sample" action="sample_slot.php" method="post">  
         <input type="submit" name="submit_btn" value=<?php echo $buttonName;?>>  
         </form>  
       </td>  
     </tr>  
 	
-	
-	
     <tr>  
-      <td colspan="3">
-<br></br>
-	<br></br>
-	<br></br>
-	
-		  
+      <td colspan="9">
+	<br></br>	  
         <?php  
           if($numberArray[0]==$numberArray[1]
 		  && $numberArray[0]==$numberArray[2]
