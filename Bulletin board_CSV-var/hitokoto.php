@@ -51,12 +51,12 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
                     <a class="navbar-brand" href="#">
-                        <img src="./favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+                        <img src="../favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
                         S-learnning
                       </a>
                       
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">トップページ <span class="sr-only">(current)</span></a>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">トップページ <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -64,11 +64,11 @@
                             演習コンテンツ
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">ガチャ</a>
-                            <a class="dropdown-item" href="#">スロット</a>
-                            <a class="dropdown-item" href="#">掲示板</a>
-                            <a class="dropdown-item" href="#">タピオカ</a>
-                            <a class="dropdown-item" href="#">RPG</a>
+                            <a class="dropdown-item" href="../gacha/Gacha.html">ガチャ</a>
+                            <a class="dropdown-item" href="../sampleq/sample_slot.php">スロット</a>
+                            <a class="dropdown-item" href="../Bulletinboard_CSV-var/index.html">掲示板</a>
+                            <a class="dropdown-item" href="../tapi/index.html">タピオカ</a>
+                            <a class="dropdown-item" href="../gameon/gamemenu.php">RPG</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -85,7 +85,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ふわりん写真集</a>
+                        <a class="nav-link" href="../picture.html">ふわりん写真集</a>
                     </li>
                 </ul>
                 <span class="navbar-text"style="color:red">
@@ -145,7 +145,7 @@ fclose($f);?>
 </div>
 </div>
 </div>
-<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>
