@@ -1,16 +1,17 @@
 ﻿<html style="height:100%;">
-
+<!--bootstrapを使用してます-->
 <head>
+	<!--ここでCSS読み込み-->
 	<link rel="stylesheet" href="css/default.css" type="text/css">
 	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
 	<title>メニュー</title>
-</head>>
+</head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!--ナビゲーションバーの重なりを回避するため上部にpaddingを設定-->
 
 	<body style="padding-top: 56px; height:100%;background-color:silver">
-		<!--コンテンツ-->
+		<!--コンテンツ余白なしのクラス-->
 		<div class="container-fluid" style="background-color:silver">
 			<!--ナビゲーションバー-->
 			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary">
@@ -30,6 +31,7 @@
 						<li class="nav-item active">
 							<a class="nav-link" href="../index.html">トップページ <span class="sr-only">(current)</span></a>
 						</li>
+						<!--ドロップダウンメニューの内容表示-->
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,7 +72,7 @@
 				<!--col:画面を縦に12分割して、どの程度範囲を使用するか-->
 				<div class="col-12">
 
-
+					<!--メインコンテンツ-->	
 					<div id="content">
 						<div id="input">
 							<h1>メニュー</h1>
@@ -80,6 +82,7 @@
 				</div>
 			</div>
 		</div>
+		<!--js読み込み（読みこまないとドロップダウン聞かない）-->	
 		<script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="../js/bootstrap.bundle.js"></script>
 	</body>
