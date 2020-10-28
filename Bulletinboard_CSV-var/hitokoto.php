@@ -26,7 +26,7 @@
 	<script src="script/jquery-3.1.0.min.js"></script>
         <title>掲示板</title>
  <script>
-        function check() {
+        function() {
             var getText = document.form.message.value;
             if (getText.length == 0) {
                 alert("コメント欄に内容を入力してください");
