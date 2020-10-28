@@ -104,7 +104,7 @@
 <p class="comment"><?php print($id);?>さん、こんにちは！
 <a href="mypage.php?id=<?php echo $id ?>">マイページ</a>　
 <a href="logout.php">ログアウト</a></p>
-<form name="form" action="" method="post">
+<form name="form" action="" method="post"><!--output csv.phpに飛ばす-->
 <dl>
 <dt class="comment">コメント</dt>
 <input type ="text" name="message" maxlength="140" cols="50" rows="1" id="message" >
