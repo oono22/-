@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Tokyo');
 session_start();
-$msg=$_POST["message"];
+$msg=$_POST["message"];//hitokoto.phpから受け取る
 $name=$_SESSION['id'];
 $date=date('Y-m-d H:i:s');
 $f = fopen("User.csv", "r");
