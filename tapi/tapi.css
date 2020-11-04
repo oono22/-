@@ -1,9 +1,10 @@
 @charset "utf-8";
+
 body{
  	background-image: url("./image/bgBlue.jpg");
  	background-repeat: repeat;
 	color: #EEEEEE;
-	z-index: 1;
+	z-index: 1;/*表示順　値が高いほど前面に来る*/
 }
 
 html, body{
@@ -17,7 +18,7 @@ html, body{
 	left: 50%;
 	width: 300px;
 	height: 300px;
-	z-index: 10000;
+	z-index: 10000;/*表示順　値が高いほど前面に来る*/
 }
 
 #shine{
@@ -26,8 +27,8 @@ html, body{
 	height: 500px;
 	top: 134px;
 	left: 50%;
-	z-index: 9999;
-	animation: r1 15s linear infinite;
+	z-index: 9999;/*表示順　値が高いほど前面に来る*/
+	animation: r1 15s linear infinite;/*アニメーション処理　r1の繰り返し処理*/
 }
 
 .sepaL{
@@ -88,7 +89,7 @@ html, body{
 	font-size: 44px;
 }
 
-@keyframes r1 {
+@keyframes r1 {/*アニメーション処理*/
   0%  {transform: translate(-50%) rotate(0deg);}
   100%  {transform: translate(-50%) rotate(360deg);}
 }
