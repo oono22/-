@@ -3,7 +3,10 @@ window.onload=function(){
 	//変数の定義
 	var tapi_cnt=document.getElementById('tapimg');
 	var tpcnt=document.getElementById('tpcnt');
+	
 	var ow=(window.screen.width/2-275)/4,oh=window.screen.height-240,fl_oh=Math.ceil((oh+ow)/ow);
+	/*ow:小タピオカ1つの大きさを求める,oh:小タピオカを出現させる行数を求める*/
+	
 	var cnt_value=0,fl_num=100,fl_cnt=0,fl_end=0,fl_y=0,cnt=4;
 	var item1=0,item2=0,item3=0,item4=0,a=0,shnum=0;
 	var imuch1=15,imuch2=100,imuch3=1100,imuch4=12000;
