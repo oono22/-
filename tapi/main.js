@@ -98,7 +98,7 @@ window.onload=function(){
 	setInterval(addPcnt,1000);
 	setInterval(parsecond,50);
 
-	//タピオカシャワーの処理
+	//タピオカシャワーの処理 
 	function shower(){
 		$(document).ready(function () {
 			shnum+=1;
