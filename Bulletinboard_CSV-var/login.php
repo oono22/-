@@ -1,3 +1,4 @@
+		//passwordチェック
 		<?php
 		$errorMessage = "";
 		if(@$_GET['err'] == '1'){

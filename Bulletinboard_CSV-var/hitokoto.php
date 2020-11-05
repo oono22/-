@@ -26,7 +26,7 @@
 	<script src="script/jquery-3.1.0.min.js"></script>
         <title>掲示板</title>
  <script>
-        function check() {
+        function() {
             var getText = document.form.message.value;
             if (getText.length == 0) {
                 alert("コメント欄に内容を入力してください");
@@ -104,7 +104,7 @@
 <p class="comment"><?php print($id);?>さん、こんにちは！
 <a href="mypage.php?id=<?php echo $id ?>">マイページ</a>　
 <a href="logout.php">ログアウト</a></p>
-<form name="form" action="" method="post">
+<form name="form" action="" method="post"><!--output csv.phpに飛ばす-->
 <dl>
 <dt class="comment">コメント</dt>
 <input type ="text" name="message" maxlength="140" cols="50" rows="1" id="message" >

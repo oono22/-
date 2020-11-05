@@ -110,6 +110,7 @@ header('Content-Type: text/html; charset=UTF-8');
 　　　　　   　　　　　　　　　　　　　　　　　　<a href="logout.php">ログアウト</a></p>
 <div id="mypage2">
 <p><img src="./image/icon<?php echo ($num)?>.png" width="100" height="100"><br>
+<!--取得したidのユーザの情報を表示-->
 <strong><?php print($id);?>さん</strong>
 電話番号:<?php print($tel);?><br />
 誕生日:<?php print($birth);?><br />
