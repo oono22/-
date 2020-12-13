@@ -106,7 +106,7 @@ div.box{
  <body  oncontextmenu='return false' bgcolor = "black">
  
   <ul>
-  <li><a href="game1.php" class="square_btn2">チュートリアル</a></li>
+  <li><a href="game1.php" class="square_btn">チュートリアル</a></li>
   <li><a href="game2.php" class="square_btn"> バトル1</a></li>
   <li><a id ="lv3" href="#" class="square_btn"> LV6以上</a></li>
   <li><a id ="lv4" href="#" class="square_btn"> LV10以上</a></li>
