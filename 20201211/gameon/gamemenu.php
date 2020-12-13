@@ -86,7 +86,7 @@ border:solid 1px #666666;
         </nav>
         <div class="row" style="text-align:center">
         <div class="col-12">
-  <iframe src="game1.php" width="940" height="640" scrolling="no">
+  <iframe src="game.php" width="940" height="640" scrolling="no">
 
   </iframe>
   <h2>戦闘画面の説明</h2>
