@@ -9045,6 +9045,12 @@ a.text-dark:hover, a.text-dark:focus {
 .catch{
 	text-align:center;
 }
+#headerparts{
+	text-align: left;
+    	vertical-align:middle
+    	height: 100px;
+    	line-height: 100px;
+}
 footer{
 	text-align:center;
 }
