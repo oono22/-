@@ -1,4 +1,4 @@
-data = [
+﻿data = [
     //ここから★3
     {"title":"チキンのトマト煮",
      "img":"cards/1.jpg",
