@@ -49,6 +49,19 @@ border:solid 1px #666666;
                       <li class="nav-item active">
                         <a class="nav-link" href="../index.html">トップページ <span class="sr-only">(current)</span></a>
                     </li>
+	<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            演習資料
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                           <a class="dropdown-item" href="../doc/gacha.pdf"target="_blank">ガチャ資料</a>
+                            <a class="dropdown-item" href="../doc/slot.pdf"target="_blank">スロット資料</a>
+                            <a class="dropdown-item" href="../doc/hitokoto.pdf"target="_blank">掲示板資料</a>
+                            <a class="dropdown-item" href="../doc/tapi.pdf"target="_blank">タピオカ資料</a>
+                            <a class="dropdown-item" href="../doc/RPG.pdf"target="_blank">RPG資料</a>
+                        </div>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -60,19 +73,6 @@ border:solid 1px #666666;
                             <a class="dropdown-item" href="../Bulletinboard_CSV-var/index.html">掲示板</a>
                             <a class="dropdown-item" href="../tapi/index.html">タピオカ</a>
                             <a class="dropdown-item" href="../gameon/gamemenu.php">RPG</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            演習資料
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                           <a class="dropdown-item" href="../doc/gacha.pdf"target="_blank">ガチャ資料</a>
-                            <a class="dropdown-item" href="../doc/slot.pdf"target="_blank">スロット資料</a>
-                            <a class="dropdown-item" href="../doc/hitokoto.pdf"target="_blank">掲示板資料</a>
-                            <a class="dropdown-item" href="../doc/tapi.pdf"target="_blank">タピオカ資料</a>
-                            <a class="dropdown-item" href="../doc/RPG.pdf"target="_blank">RPG資料</a>
                         </div>
                     </li>
                     <li class="nav-item">
