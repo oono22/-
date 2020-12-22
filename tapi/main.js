@@ -11,7 +11,7 @@ window.onload=function(){
 	var item1=0,item2=0,item3=0,item4=0,a=0,shnum=0;
 	var imuch1=15,imuch2=100,imuch3=1100,imuch4=12000;
 	var icps1=1,icps2=8,icps3=20,icps4=47,i_cps=0;
-	var gg=0,wp=fl_oh;
+	var gg=5,wp=fl_oh-1;
 
 	//タピオカをクリックしたときに１つタピオカを足す
 	tapi_cnt.onclick=function(){
@@ -100,6 +100,9 @@ window.onload=function(){
 	};
 	setInterval(addPcnt,1000);
 	setInterval(parsecond,50);
+	var ale = function(){
+		alert('flag=you are tapioka master');
+	};
 
 	//タピオカシャワーの処理 
 	function shower(){
@@ -137,13 +140,32 @@ window.onload=function(){
 	    gg+=ow;
 	    if (fl_cnt==cnt) {
 	    	fl_y+=ow;
-	    	gg=0;
+	    	gg=5;
 	    	cnt+=4;
 	    }
-	    	if (fl_cnt>wp*4) {fl_end=1;
+	    	if (fl_cnt==wp*4) {fl_end=1;
 	    }
 		if (fl_end==1) {
-			alert('flag=you are tapioka master');
+			setTimeout(ale,2000);
 		}
 	};
+
+	//モーダルウィンドウの表示
+	function firstscript() {
+   		$('.js-modal').fadeIn();
+        return false;
+	}
+	firstscript();
+
+	$(function(){
+    $('.js-modal-open').on('click',function(){
+        $('.js-modal').fadeIn();
+        return false;
+    });
+    $('.js-modal-close').on('click',function(){
+        $('.js-modal').fadeOut();
+        return false;
+    });
+	});
+
 };
