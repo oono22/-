@@ -162,8 +162,8 @@ $(function(){
         $('#result').html("");
         //ガチャの画像を消す
         $('#gachaimage').html("");
-        //【ボタンを消す（二重決済防止）】
-        $('#try').hide();
+	//【ボタンを消す（二重決済防止）】
+        $('#searcharea').hide();
     } 
 
     //結果生成
@@ -228,6 +228,7 @@ $(function(){
 
     //結果表示
     function showResult(){
+	$('<div id="searcharea"></div>');
         //召喚中画面再生
         $('<div class="image"><img src="cards/hoge.jpg"></div>').appendTo('#loadarea').hide().fadeIn(2000);
         //召喚中画面が再生され終わったら消え、結果表示用の画面が出る
@@ -238,11 +239,11 @@ $(function(){
             //結果・もう一度引くボタンを表示する
             $.each(result, function(key, value){
             $('<div class="title">' + value.title + ' ★' + value.rarelity + '</div>').appendTo('#result');
-            $('<div class="image"><img src="' + value.img + '"></div><br>').appendTo('#result');
+            $('<div class="image" style="text-align:center"><img src="' + value.img + '"></div><br>').appendTo('#result');
             })
 			
             $('<p>もっと引く？FLAG{GAMEOVER}<p>').appendTo('#result');
-            $('#try').show();
+            $('#searcharea').show();
             },
             3000)
     }
