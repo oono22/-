@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">  
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">  
 <html style="height: 100%;">  
   <head>  
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
@@ -120,7 +120,12 @@
           }else{  
             echo "<img src= noclear.png>";  
           }  
-        ?>  
+        ?>
+		<link rel="stylesheet"href="style.css">  
+		 <div class="slot_Document">
+		<iframe src="http://learn.secret.jp/doc/slot.pdf" width="550" height="320" frameborder="0" style="border:0" allowfullscreen>
+		</iframe>
+		</div>  
       </td>  
     </tr>  
   </table>  
