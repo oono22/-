@@ -112,6 +112,9 @@
 </dl>
 <input type="submit" value="投稿する" onClick='check()'/>
 </form>
+<dl>
+    ※演習問題のため、投稿は反映されません。
+</dl>
 </div>
 <div id="view">
 <h1>投稿一覧</h1>
